@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>Feedback</title>
+        <link type="text/css" rel="stylesheet" href="feedback.css">
+    </head>
+    
+    <body>
+        <h1>FEEDBACK</h1>
+            <form action="thankyou.html" method="get">
+        <legend class="legend"></legend> <br>
+        
+    <fieldset>
+        <div class="form">
+            <label for="CaseID">CaseID:</label>
+            <input type="text">
+        </div>
+        
+        <br>
+        
+        <div class="form">
+            <label for="Subject">Subject:<span class="redText">*</span class></label>
+            <input type="text">
+        </div>
+            
+        <br>
+    
+        <div class="form">
+            <label for="Comment">Comment:</label>
+            <textarea rows="10" cols="48"></textarea>
+        </div>
+        
+            <br>
+        
+        <div class="form">
+            <label for="Importance">Importance:</label><br>
+                <div class="formR">
+                    <input type="radio" name="Importance" value="High"> High<br>
+                    <input type="radio" name="Importance" value="Medium">Medium<br>
+                    <input type="radio" name="Importance" value="Low"> Low<br>
+                </div>
+        </div>
+            
+   
+        <div class="submit">
+            <input type="submit">
+        </div>
+
+    </fieldset>
+        </form>
+    </body>
+</html>

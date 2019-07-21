@@ -1,0 +1,51 @@
+body {
+    background-color: peachpuff;
+    margin-left: 20%
+}
+
+h1 {
+    font-family: Times New Roman, serif; 
+    font-size: 120%; 
+    color: firebrick;
+    }
+.form {
+    font-weight: bold; 
+    }
+
+label {
+    display: inline-block; 
+    width: 20%;
+    margin-right: 40px;
+    text-align: top;
+}
+
+input {
+}
+
+fieldset {
+    border: none;
+    width: 300 px;
+    margin-right: 30px auto;
+}
+
+.formR {
+    font-weight: normal;
+    margin-left:200px;
+}
+textarea {
+    vertical-align:top;
+}
+.redText {
+    color:red;
+}
+
+.submit {
+    margin-left: 200px;
+}
+
+.thanks {
+    text-align: center;
+    font-weight: bold;
+    color: firebrick;
+    
+}

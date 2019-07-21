@@ -1,0 +1,20 @@
+ol.a {
+    list-style-type: upper-roman;
+    list-style-position: inside;
+    font-family:fantasy;
+    font-weight: bold;
+    color: darkred;
+    border: 2px solid;
+}
+
+ul.b {
+    list-style-type: square;
+    list-style-position: outside;
+    border-color: aqua;
+    border: 5px dotted; 
+}
+
+ul.c {
+    font-family: 'Permanent Marker', cursive;
+    list-style-image:url(https://material.io/tools/icons/?icon=brightness_low&style=baseline);
+}
