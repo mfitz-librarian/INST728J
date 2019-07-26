@@ -1,0 +1,115 @@
+body {
+    font-family:serif;
+    background-color:#E21833;
+}
+
+header {
+    background-color: white;
+    position:absolute;
+    width:100%
+    
+}
+
+.maincontent {
+    height: auto;
+    width: auto;
+    background-color:#E21833;
+}
+
+nav {
+    background-color:#E21833;
+    position: static;
+    margin-top: 100px;
+    width: 15%;
+    float:left;
+}
+
+a{
+    color: #ffd200;
+    font-weight: bold;
+    font-size:20px;
+    list-style-position: outside;
+    list-style-image: url("https://fonts.googleapis.com/icon?family=Material+Icons");
+    margin-left: 30px;   
+}
+
+#instruction {
+    display:inline-block;
+    position: static;
+    background-color: bisque;
+    margin-top:110px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    height: 300px;
+    width: 70%;
+    padding-top:20px;
+    padding-left:50px;
+    padding-bottom: 75px;
+    float:right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    color: firebrick;
+    font-weight: bolder;
+}
+
+#form {
+    position: absolute;
+    top: 230px;
+    right: 50px;
+    display: inline-block;
+    background-color: antiquewhite;
+    height: 250px;
+    width: 800px; 
+    float:right;
+    border: none;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    z-index: 5;
+}
+
+fieldset {
+    display: inline-block;
+    border: none;
+    width: 75%;
+    margin-right:30px; 
+    padding-left: 120px;
+}
+legend {
+    font-weight: bold;
+    font-size: 110%;
+    color: firebrick;
+}
+
+label {
+    display: inline-block;
+    text-align:left;
+    width: 40px;
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-right: 100px; 
+    font-weight: bold;
+}
+
+textarea {
+    vertical-align: top;
+}
+
+footer {
+    background-color:bisque;
+    text-align:center;
+    width: 100%
+    margin-top:10px;
+    padding:3px; 
+    clear:both;
+}
+
+.redText {
+    color:#E21833;
+}
+
+.submit {
+    margin-left:25%;
+}

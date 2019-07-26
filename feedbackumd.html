@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Employee Portal</title>
+        <meta charset="utf-8">
+        <link type="text/css" rel="stylesheet" href="feedbackumd.css"> 
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="UMDLogo.jpg" alt="University of Maryland Institutional Logo" height="100" width="250">
+        </header>
+    
+        <div class="maincontent">
+            <nav>
+                <ul>
+                    <li><a href="feedbackumd.html">Feedback</a></li>
+                </ul>
+            </nav>
+        
+            <div id="instruction">
+                <p>Please complete following form</p>
+            </div> <!--instruction closing-->
+       
+            <br>
+            
+            <div id="form">   <!--form-->
+                <form action="thankyouw3.html" method="POST">
+                    <fieldset>
+                        <legend>FEEDBACK</legend>
+                        
+                            <label class="CaseID" for="CaseID">CaseID:</label>
+                            <input type="text" name="CaseID" size="20">
+                        
+                            <br>
+                        
+                            <label class="Subject" for="Subject">Subject:<span class="redText">*</span></label>
+                            <input type="text" name="Subject" size="60">
+                        
+                            <br>
+                            <label class="Comment" for="Comment">Comment:<span class="redText">*</span></label>
+                            <textarea id="comment" rows="10" cols="35"></textarea>
+                
+                            <br>
+                            <div class="submit">
+                                <input type="submit" value="Submit">
+                            </div>
+                    </fieldset>
+                </form>
+        </div> <!--form closing-->     
+             
+           
+        </div> <!--maincontent closing-->
+        
+           
+        <footer>
+            <p> Copyright &#169; UMD. All Rights Reserved.</p>
+        </footer>
+    </body>
+</html>
