@@ -1,54 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
     <head>
+        <title>Employee Portal</title>
         <meta charset="utf-8">
-        <title>Feedback</title>
-        <link type="text/css" rel="stylesheet" href="feedback.css">
+        <link type="text/css" rel="stylesheet" href="feedback.css"> 
+        <script type="text/javascript">
+                function validateForm() {
+                    if(document.FeedbackForm.caseid.value == "") {  
+                        alert("Please enter your Case ID");
+                    document.FeedbackForm.caseid.focus();
+                    return false;
+                    }
+                
+                    if(document.FeedbackForm.subject.value == "") {
+                        alert ("Please identify the subject");
+                    document.FeedbackForm.subject.focus();
+                    return false;
+                    }
+                    if(document.FeedbackForm.comment.value== "") {
+                        alert ("Please tell us about the issue");
+                    document.FeedbackForm.comment.focus();
+                    return false;
+                    }
+                    return(true);  
+            }
+        
+            </script>
     </head>
-    
-    <body>
-        <h1>FEEDBACK</h1>
-            <form action="thankyou.html" method="get">
-        <legend class="legend"></legend> <br>
-        
-    <fieldset>
-        <div class="form">
-            <label for="CaseID">CaseID:</label>
-            <input type="text">
-        </div>
-        
-        <br>
-        
-        <div class="form">
-            <label for="Subject">Subject:<span class="redText">*</span class></label>
-            <input type="text">
-        </div>
-            
-        <br>
-    
-        <div class="form">
-            <label for="Comment">Comment:</label>
-            <textarea rows="10" cols="48"></textarea>
-        </div>
-        
-            <br>
-        
-        <div class="form">
-            <label for="Importance">Importance:</label><br>
-                <div class="formR">
-                    <input type="radio" name="Importance" value="High"> High<br>
-                    <input type="radio" name="Importance" value="Medium">Medium<br>
-                    <input type="radio" name="Importance" value="Low"> Low<br>
-                </div>
-        </div>
-            
-   
-        <div class="submit">
-            <input type="submit">
-        </div>
 
-    </fieldset>
-        </form>
+    <body>
+        <header>
+            <img src="UMDLogo.jpg" alt="University of Maryland Institutional Logo" height="100" width="250">
+        </header>
+    
+        <div class="maincontent">
+            <nav>
+                <ul>
+                    <li><a href="#">Payroll Information</a></li>
+                    <li><a href="#">Performance Appraisal</a></li>
+                    <li><a href="#">Timesheet</a></li>
+                    <li><a href="#">Leave Management</a></li>
+                    <li><a href="#">Health Benefits</a></li>
+                    <li><a href="orgchart.html">Organization Chart</a></li>
+                    <li><a href="#">Access Management</a></li>
+                    <li><a href="#">Career Development</a></li>
+                    <li><a href="#">My Profile</a></li>
+                    <li><a href="#">Expense Reimbursement</a></li>
+                    <li><a href="#">Retirement Planning</a></li>
+                    <li><a href="#">Ticket Management</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </nav>
+        
+            <div id="instruction">
+                <p>Please complete following form</p>
+            </div> <!--instruction closing-->
+       
+            <br>
+            
+            <div id="form">   <!--form-->
+                <form action="thankyou.html" name="FeedbackForm" onsubmit="return(validateForm());">
+                    <fieldset>
+                        <legend>FEEDBACK</legend>
+                        
+                            <label for="caseid">CaseID:</label>
+                            <input type="text" name="caseid" size="20">
+                        
+                            <br>
+                        
+                            <label for="subject">Subject:<span class="redText">*</span></label>
+                            <input type="text" name="subject" size="60">
+                        
+                            <br>
+                            <label for="comment">Comment:<span class="redText">*</span></label>
+                            <textarea id="comment" rows="10" cols="35"></textarea>
+                
+                            <br>
+                            <div class="submit">
+                                <input type="image" src="images/btn_submit.gif" value="">
+                            </div>
+                    </fieldset>
+                </form>
+        </div> <!--form closing-->     
+             
+           
+        </div> <!--maincontent closing-->
+        
+       <br>    
+        <footer>
+            <p> Copyright &#169; UMD. All Rights Reserved.</p>
+        </footer>
     </body>
 </html>
